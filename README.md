@@ -41,7 +41,7 @@ Credit check address component
 
 **Given** I have filled in all the fields  
 **And** my current address move-in date is 1 year from today  
-**When** I enter my 2nd address move-in date
+**When** I enter my 2nd address move-in date  
 **And** the move-in date is 2 years from today  
 **Then** I should see another address form appear beneath the 2nd one  
 **And** the title of the new form should be '3rd Address'
