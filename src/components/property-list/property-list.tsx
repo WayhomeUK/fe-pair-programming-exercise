@@ -38,6 +38,7 @@ export const PropertyList: React.FC = () => {
                         price={property.price}
                         bedrooms={property.bedrooms}
                         floorArea={property.floorArea}
+                        date={property.date}
                     />
                 </li>
             ))}

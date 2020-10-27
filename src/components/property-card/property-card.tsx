@@ -7,9 +7,10 @@ interface IProps {
     price: number;
     bedrooms: number;
     floorArea: number;
+    date: string;
 }
 
-export const PropertyCard: React.FC<IProps> = ({ className, address, price, bedrooms, floorArea }) => {
+export const PropertyCard: React.FC<IProps> = ({ className, address, price, bedrooms, floorArea, date }) => {
     return (
         <Wrapper className={className}>
             <h3>{address}</h3>
@@ -17,6 +18,7 @@ export const PropertyCard: React.FC<IProps> = ({ className, address, price, bedr
                 <li>Price: £{price.toLocaleString()}</li>
                 <li>Bedrooms: {bedrooms}</li>
                 <li>Floor Area: {floorArea}</li>
+                <li>Date: {date}</li>
             </ul>
         </Wrapper>
     );
